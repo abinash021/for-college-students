@@ -161,7 +161,8 @@ int main() {
     Program to print 3d array
 */
 
- // Initializing an 3D array of 3 rows and 5 columns and 2 layers
+ // Initializing a 3D array of 3 rows and 5 columns and 2 layers
+ 
     int array[3][5][2];
 
     printf("\nEnter the Elements to be stored:- ");
