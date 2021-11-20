@@ -1,27 +1,3 @@
-/* 
-
-==========> Implemenation of the stack <=========
-
-1=> What the hell is stack?
-
-Ans. Stack is a data structure which is used to store the data in LIFO(Last in first out) or FILO(First in last out) manner.
-     It is a ADT(Abstract Data Type) having two major operations: 1 -> push() 2 -> pop().
-
-     Graphical representation is given.
-     
-     Push() operation is used to insert the data in the stack.
-     Pop() operation is used to delete the data from the stack.
-
-
-2=> Where is the stack implemented?
-
-Ans. Stack is implemented in undo and redo mechanism. It is also used to evaluate the prefix, postfix and infix expression.
-
-
-Here we are going to implement the stack using array.
-
-*/
-
 #include <stdio.h>
 
 int stack[100], size_of_stack=0;
@@ -64,8 +40,6 @@ int main() {
     }
 }
 
-//code for push operation
-
 int push() {
     int no_of_elements;
     printf("\nEnter the number of elements you want to Enter: ");
@@ -81,30 +55,24 @@ int push() {
     }
 }
 
-// Code for pop operation
-
 int pop() {
     if(size_of_stack==0) {
-        printf("Stack Underflow");
+        printf("\nStack Underflow\n");
     }
     else {
-        printf("%d is popped out", stack[size_of_stack-1]);
+        printf("\n%d is popped out\n", stack[size_of_stack-1]);
         size_of_stack--;
     }
 }
-
-// To display top most element
 
 int top_element() {
     if(size_of_stack==0) {
         printf("\nStack is empty\n");
     }
     else {
-        printf("%d is the top most element", stack[size_of_stack-1]);
+        printf("\n%d is the top most element\n", stack[size_of_stack-1]);
     }
 }
-
-// To display the stack
 
 int display(int size_of_stack) {
     if(size_of_stack==0) {
@@ -112,7 +80,7 @@ int display(int size_of_stack) {
     }
     else {
         for(int i=size_of_stack-1; i>=0; i--) {
-            printf("%d ", stack[i]);
+            printf("\n%d ", stack[i]);
         }
         printf("\n");
     }

@@ -8,6 +8,10 @@ A pointer can also be used to refer to another pointer function. A pointer can b
 i.e., to point to the next/ previous memory location. The purpose of pointer is to save memory space and achieve faster execution time.
 
 
+=> How to declare a pointer?
 
+Ans. Pointer is declared using the following syntax:
+     int *ptr;
+     
 
 */
