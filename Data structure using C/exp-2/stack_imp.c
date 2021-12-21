@@ -1,6 +1,6 @@
 #include <stdio.h>
-
-int stack[100], size_of_stack=0;
+#define size 20
+int stack[size], size_of_stack=0;
 int push();
 int pop();
 int top_element();
@@ -44,8 +44,8 @@ int push() {
     int no_of_elements;
     printf("\nEnter the number of elements you want to Enter: ");
     scanf("%d", &no_of_elements);
-    if(size_of_stack+no_of_elements>100) {
-        printf("Stack Overflow"); // if stack is full
+    if(size_of_stack+no_of_elements > size) {
+        printf("Stack Overflow\n"); // if stack is full
     }
     else {
         for(int i=0; i<no_of_elements; i++) {
@@ -76,7 +76,7 @@ int top_element() {
 
 int display(int size_of_stack) {
     if(size_of_stack==0) {
-        printf("Stack is empty");
+        printf("Stack is empty\n");
     }
     else {
         for(int i=size_of_stack-1; i>=0; i--) {
