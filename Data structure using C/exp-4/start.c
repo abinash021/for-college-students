@@ -40,7 +40,7 @@ int main() {
     // Amit.age = 19; // Amit.age is the age of Amit. This is how you assign values to structure variable.
     // Amit.mobile = 9861986198; // This is amit's mobile number assigned using dot operator.
 
-    Amit.name[20] = "Amit"; // This is amit's name assigned using dot operator. Butttttttt this is wrong. 
+//    Amit.name[20] = "Amit"; // This is amit's name assigned using dot operator. Butttttttt this is wrong. 
   
 
     // Reason ? Because Amit.name is a string and not an integer or character. 
@@ -58,6 +58,7 @@ int main() {
     char *variable_name = "some value";
     // orr
     variable_name = "Another value";
+
     // All of these things works fine but you can't do something as below:-
     // char c = "string input"; //Wrong : Because You can't assign a string to a character.
 
@@ -69,7 +70,18 @@ int main() {
     // On the other hand, the expression with the string literal "Sachin" used as an assignment expression has the type char *.
 
     // You need to initialize the array when an object of the structure type is defined like
-    struct student Amit = { .name = "Sachin" };
+    struct student afrid = {
+        .name = "Akram",
+        .age = 19,
+        .mobile = 9861986198,
+        .address = "Delhi"
+    };
+
+    // or
+
+    struct student satabdi = {
+        .name = "Satabdi"
+    }
 
     // or
     // Or after defining the object you can copy the string literal in the array like
@@ -80,9 +92,23 @@ int main() {
     // strcpy( Amit.name, "Sachin" );
  
 
-}
-
 // UNIONS:-
 // A union is a collection of variables of different data types. The difference between a union and a structure 
 // is that a union can have more than one member whereas a structure can have only one member. 
+// Union occupies less memory than structure and the memory taken by a union is equal to the largest member of the union.
 // 
+// Declaring a union variable name Basu
+//
+ union Student {
+    int age;
+    char name[20];
+    float mobile;
+    char address[40];
+ } Basu, Santu, Chinu;
+
+// This is how to define a union variable. Here Basu, Santu and Chinu  are the variables.
+// Let's see how to store different student details in a union. 
+// Example - 1
+  Basu.age = 90;
+  printf("%d\n", Basu.age);
+  }
