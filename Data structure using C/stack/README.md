@@ -74,5 +74,5 @@ Elements:
 5
 3
 Stack is full: No
-Stack is empty: Yes
+Stack is empty: No
 ```
