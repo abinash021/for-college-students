@@ -1,6 +1,6 @@
 # C program to implement queue using array
 
-'''c
+```c
 
 #include<stdio.h>
 #include<stdlib.h> 
@@ -83,10 +83,10 @@ void display()
         printf("\n");
 }
 
-'''c
+```
 # OUTPUT
 
-'''
+```
 
 user@DESKTOP-0RT68SG MINGW64 ~/Desktop/d
 $ gcc qq.c
@@ -142,4 +142,4 @@ Enter What you want :3
 4. EXIT
 Enter What you want :
 
-'''
+```
